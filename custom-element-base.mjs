@@ -55,6 +55,7 @@ class CustomElementBase extends HTMLElement {
   };
 
   bindProperties(objSubClass) {
+    // https://github.com/woutervroege/html-element-property-mixins
     console.log('BASE: bindProperties called with', objSubClass, this);
     console.log('BASE: this', this.constructor.observedProperties);
     console.log('BASE: objSubClass', objSubClass.observedProperties);
@@ -98,6 +99,7 @@ class CustomElementBase extends HTMLElement {
   };
 
   triggerCustomEvent(strName, anyDetail = {}, domNode = this) {
+    // https://dev.to/open-wc/composed-true-considered-harmful-5g59
     console.log('BASE: triggerEvent called with event type', strName, this);
     const objEvent = new CustomEvent(this.constructor.customEventPrefix + strName, {
       bubbles: false,
