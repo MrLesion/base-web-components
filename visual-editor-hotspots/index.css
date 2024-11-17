@@ -1,0 +1,91 @@
+:root {
+  --swift-accent-color: blue; }
+
+.hotspot-app-container .hotspot-app-item-content .e-productlist-item-image-hover {
+  display: none !important; }
+
+.hotspot-number-link {
+  text-decoration: none; }
+
+@media (min-width: 992px) {
+  .hotspot-number-link {
+    pointer-events: none; } }
+
+.item-state-til-salg {
+  background: #bcdccb !important; }
+
+.item-state-udstillingshus, .item-state-inspirationshus {
+  background: #F9DD8F !important; }
+
+.item-state-solgt {
+  background: #f98f8f !important; }
+
+.hotspot-app-items-table .house-number {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #F9DD8F;
+  border: 1px solid var(--swift-accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.875em; }
+
+.hotspot-app-container {
+  position: relative;
+  width: 100%; }
+
+@media (max-width: 575.98px) {
+  .hotspot-app-container {
+    overflow: hidden; } }
+.hotspot-app-container .hotspot-app-image {
+  width: 100%; }
+.hotspot-app-container .hotspot-app-item {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #F9DD8F;
+  border: 1px solid var(--swift-accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.875em; }
+.hotspot-app-container .hotspot-app-item:hover {
+  z-index: 9; }
+.hotspot-app-container .hotspot-app-item:hover .hotspot-app-item-popup-frontend {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 9; }
+
+@media (max-width: 575.98px) {
+  .hotspot-app-container .hotspot-app-item:hover .hotspot-app-item-popup-frontend {
+    display: none; } }
+.hotspot-app-container .hotspot-app-item-popup-frontend {
+  border: 1px solid var(--swift-accent-color);
+  left: 50%;
+  top: calc(100% + 55px);
+  transform: translate(-50%, -50%) scale(0.25);
+  background: #FFFFFF;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  padding: 20px;
+  transition: all .15s ease;
+  width: 200px; }
+.hotspot-app-container .hotspot-app-item-popup-frontend p {
+  margin-bottom: 0;
+  color: #2E2E2E;
+  font-weight: normal; }
+.hotspot-app-container .hotspot-app-item-popup-frontend .e-productlist-item {
+  margin-bottom: 0 !important; }
+.hotspot-app-container .hotspot-app-item-popup-frontend .e-productlist-item .e-productlist-item-text-container {
+  padding: 0 1.25em 1.25em !important; }
+
+@media (max-width: 575.98px) {
+  .hotspot-app-container .hotspot-app-item-popup-frontend {
+    width: 150px; } }
